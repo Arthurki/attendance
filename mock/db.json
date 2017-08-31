@@ -1,0 +1,265 @@
+{
+  "/login": {
+    "code": 1,
+    "msg": "success",
+    "data": {
+      "token": "12312312321",
+      "teacherId": "1",
+      "userId": "1"
+    }
+  },
+  "/getClassCourse": {
+    "code": 1,
+    "msg": "success",
+    "data": [
+      {
+        "id": 1,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207"
+      },
+      {
+        "id": 2,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207"
+      },
+      {
+        "id": 3,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207"
+      }
+    ]
+  },
+  "/getAttendance": {
+    "code": 1,
+    "msg": "success",
+    "data": {
+      "attendanceId": 1,
+      "students": [
+        {
+          "class": "软件工程14207",
+          "studentId": "14310320718",
+          "name": "feather",
+          "stateId": 2,
+          "state": "正常"
+        },
+        {
+          "class": "软件工程14207",
+          "studentId": "14310320718",
+          "name": "feather",
+          "stateId": 1,
+          "state": "正常"
+        },
+        {
+          "class": "软件工程14207",
+          "studentId": "14310320718",
+          "name": "feather",
+          "stateId": 1,
+          "state": "正常"
+        }
+      ]
+    }
+  },
+  "/postAttendance": {
+    "code": 1,
+    "msg": "success"
+  },
+  "/getAllClassCourse": {
+    "code": 1,
+    "msg": "success",
+    "data": [
+      {
+        "id": 1,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207",
+        "time": "2017/7/1",
+        "lock": "0"
+      },
+      {
+        "id": 2,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207",
+        "time": "2017/7/1",
+        "lock": "0"
+      },
+      {
+        "id": 3,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207",
+        "time": "2017/7/1",
+        "lock": "1"
+      }
+    ]
+  },
+  "/getClassCourseList": {
+    "code": 1,
+    "msg": "success",
+    "data": [
+      {
+        "id": 1,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207"
+      },
+      {
+        "id": 2,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207"
+      },
+      {
+        "id": 3,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207"
+      }
+    ]
+  },
+  "/getStudentsScore": {
+    "code": 1,
+    "msg": "success",
+    "data": [
+      {
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "studentId": "14310320718",
+        "name": "feather",
+        "score": "100"
+      },
+      {
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "studentId": "14310320718",
+        "name": "feather",
+        "score": "90"
+      }
+    ]
+  },
+  "/checkday": {
+    "code": 1,
+    "msg": "success",
+    "data": 9
+  },
+  "/searchAttendance": {
+    "code": 1,
+    "msg": "success",
+    "data": [
+      {
+        "id": 1,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207",
+        "time": "2017/7/1",
+        "lock": "0"
+      },
+      {
+        "id": 2,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207",
+        "time": "2017/7/1",
+        "lock": "0"
+      },
+      {
+        "id": 3,
+        "courseName": "面向对象",
+        "class": "软件工程14207",
+        "teacherName": "黄成",
+        "date": "1-6",
+        "week": "1,3",
+        "section": "1,2",
+        "classroom": "A4207",
+        "time": "2017/7/1",
+        "lock": "1"
+      }
+    ]
+  },
+  "/getCourse": {
+    "code": 1,
+    "msg": "success",
+    "data": {
+      "course1": {
+        "courseId": 1,
+        "classes": [
+          "14307",
+          "14207"
+        ]
+      },
+      "course2": {
+        "courseId": 2,
+        "classes": [
+          "15307",
+          "15207"
+        ]
+      },
+      "course3": {
+        "courseId": 3,
+        "classes": [
+          "16307",
+          "16207"
+        ]
+      }
+    }
+  },
+  "/getStatistic": {
+    "code": 1,
+    "msg": "success",
+    "data": {
+      "正常": 1,
+      "迟到": 2,
+      "旷课": 3,
+      "病假": 4,
+      "事假": 5,
+      "早退": 0
+    }
+  }
+}

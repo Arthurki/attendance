@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>查询考勤信息</title>
+  <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./static/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span>学生考勤系统</span></a>
+      <ul class="user-menu">
+        <li class="dropdown pull-right">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> User <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a id="logout" href="javascript:;"><span class="glyphicon glyphicon-log-out"></span>登出</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="sidebar-collapse" class="col-sm-4 col-lg-3 sidebar">
+  <ul class="nav menu">
+    <li><a href="setSchedules.html"><span class="glyphicon glyphicon-edit"></span>设置课程表</a></li>
+    <li class="active"><a href="searchAttendance.html"><span class="glyphicon glyphicon-check"></span>查询考勤信息</a></li>
+    <li><a href="statistics.html"><span class="glyphicon glyphicon-align-left"></span>分类统计</a></li>
+    <li><a href="assitantChangepwd.html"><span class="glyphicon glyphicon-cog"></span>修改密码</a></li>
+  </ul>
+</div><!--/.sidebar-->
+
+<div class="col-sm-8 col-sm-offset-4 col-lg-9 col-lg-offset-3 main">
+  <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="#"><span class="glyphicon glyphicon-check"></span></a></li>
+      <li class="active">查询考勤信息</li>
+    </ol>
+  </div><!--/.row-->
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">查询考勤信息</h1>
+    </div>
+  </div><!--/.row-->
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-body" id="panelTable">
+          <div class="loading" style="display: none">
+            <span></span>
+            <span></span> 
+            <span></span> 
+            <span></span> 
+            <span></span> 
+          </div>
+          <form class="form-horizontal" id="searchForm">
+            <div class="form-group">
+              <label class="col-lg-2 control-label">搜索类型</label>
+              <div class="col-lg-5">
+                <select name="searchtype" id="searchType" class="form-control">
+                  <option value="1">按教师名</option>
+                  <option value="2">按时间</option>
+                  <option value="3">按系</option>
+                  <option value="4">按班级</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" id="searchKeyGroup">
+              <label class="col-lg-2 control-label">关键字</label>
+              <div class="col-lg-5">
+                <input class="form-control" id="searchKey" type="text" name="searchkey">
+              </div>
+            </div>
+            <p class="text-center text-danger" id="searchKeyAlert" style="display: none"></p>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-lg-1 col-lg-push-1">
+              <button class="btn btn-primary" id="searchButton">搜索</button>
+            </div>
+            <div class="col-lg-1 col-lg-push-1" style="display: none">
+              <button class="btn btn-primary" id="backButton">返回</button>
+            </div>
+            <div class="col-lg-4 col-lg-push-2">
+              <p class="text-center text-danger" id="searchAlert" style="display: none"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+</div>  <!--/.main-->
+<script type="text/javascript" src="./static/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./static/bootstrap/js/bootstrap.min.js"></script>
+<!-- built files will be auto injected -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>考勤</title>
+  <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./static/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span>学生考勤系统</span></a>
+      <ul class="user-menu">
+        <li class="dropdown pull-right">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> User <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>-->
+            <!--<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>-->
+            <li><a id="logout" href="javascript:;"><span class="glyphicon glyphicon-log-out"></span>登出</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="col-sm-4 col-lg-3 sidebar" id="sidebar-collapse">
+  <ul class="nav menu">
+    <li class="active"><a href="teacherAttendance.html"><span class="glyphicon glyphicon-check"></span>考勤</a></li>
+    <li><a href="modifyInfo.html"><span class="glyphicon glyphicon-edit"></span>修改考勤信息</a></li>
+    <li><a href="searchInfo.html"><span class="glyphicon glyphicon-th-list"></span>查询考勤情况</a></li>
+    <li><a href="score.html"><span class="glyphicon glyphicon-align-left"></span>统计平时成绩</a></li>
+    <li><a href="teacherChangepwd.html"><span class="glyphicon glyphicon-cog"></span>修改密码</a></li>
+  </ul>
+</div><!--/.sidebar-->
+
+<div class="col-sm-8 col-sm-offset-4 col-lg-9 col-lg-offset-3 main">
+  <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="#"><span class="glyphicon glyphicon-check"></span></a></li>
+      <li class="active">考勤</li>
+    </ol>
+  </div><!--/.row-->
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">考勤</h1>
+    </div>
+  </div><!--/.row-->
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-body" id="panelTable">
+          <div class="loading">
+            <span></span>
+            <span></span> 
+            <span></span> 
+            <span></span> 
+            <span></span> 
+          </div>
+          <p class="text-center text-danger" id="courseAlert" style="display: none"></p>
+        </div>
+        <div class="panel-footer" id="panelFooter" style="display: none">
+          <div class="row">
+            <div class="col-lg-1 col-lg-push-1">
+              <button id="submitButton" class="btn btn-primary">提交</button>
+            </div >
+            <div class="col-lg-1 col-lg-push-1">
+              <button id="backButton" class="btn btn-primary">返回</button>
+            </div >
+            <div class="col-lg-4 col-lg-push-2">
+              <p class="text-center text-danger" id="submitAlert" style="display: none"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+</div>  <!--/.main-->
+<script type="text/javascript" src="./static/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./static/bootstrap/js/bootstrap.min.js"></script>
+<!-- built files will be auto injected -->
+</body>
+</html>
